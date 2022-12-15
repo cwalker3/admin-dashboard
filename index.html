@@ -4,11 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    
+  <div class="header">
+    <div class="header-grid">
+      <div class="top-left">
+        <img src="svg/search.svg" alt="search" class="search">
+        <input type="search">
+      </div>
+      <div class="top-right">
+        <img src="svg/bell.svg" alt="bell" class="bell">
+        <img src="svg/cat.svg" alt="profile-pic" class="profile-pic-small">
+        <p>Morgan Oakley</p>
+      </div>
+      <div class="bottom-left">
+        <img src="svg/cat.svg" alt="profile-pic" class="profile-pic-big">
+        <div>
+          <p class="greeting">Hi there,</p>
+          <p class="name">Morgan Oakley (@morgan)</p>
+        </div>
+      </div>
+      <div class="bottom-right">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="nav">
+      <div class="top">
+        <div>
+          <img src="svg/dashboard.svg" alt="Dashboard">
+          <p>Dashboard</p>
+        </div>
+      </div>
+      <div class="middle">
+        <div>
+          <img src="svg/home.svg" alt="Home">
+          <p>Home</p>
+        </div>
+        <div>
+          <img src="svg/profile.svg" alt="Profile">
+          <p>Profile</p>
+        </div>
+        <div>
+          <img src="svg/messages.svg" alt="Messages">
+          <p>Messages</p>
+        </div>
+        <div>
+          <img src="svg/history.svg" alt="History">
+          <p>History</p>
+        </div>
+        <div>
+          <img src="svg/tasks.svg" alt="Tasks">
+          <p>Tasks</p>
+        </div>
+        <div>
+          <img src="svg/communities.svg" alt="Communities">
+          <p>Communities</p>
+        </div>
+      </div>
+      <div class="bottom">
+        <div>
+          <img src="svg/settings.svg" alt="Settings">
+          <p>Settings</p>
+        </div>
+        <div>
+          <img src="svg/support.svg" alt="Support">
+          <p>Support</p>
+        </div>
+        <div>
+          <img src="svg/privacy.svg" alt="Privacy">
+          <p>Privacy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="projects">
+      <h2>Your Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3 class="project-title">Super Cool Project</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed. </p>
+          <div class="icon-container">
+            <img src="svg/star.svg" alt="star" class="icon">
+            <img src="svg/eye.svg" alt="eye" class="icon">
+            <img src="svg/share.svg" alt="share" class="icon">
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Less Cool Project</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed. </p>
+          <div class="icon-container">
+            <img src="svg/star.svg" alt="star" class="icon">
+            <img src="svg/eye.svg" alt="eye" class="icon">
+            <img src="svg/share.svg" alt="share" class="icon">
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Impossible App</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed. </p>
+          <div class="icon-container">
+            <img src="svg/star.svg" alt="star" class="icon">
+            <img src="svg/eye.svg" alt="eye" class="icon">
+            <img src="svg/share.svg" alt="share" class="icon">
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Easy Peasy App</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed. </p>
+          <div class="icon-container">
+            <img src="svg/star.svg" alt="star" class="icon">
+            <img src="svg/eye.svg" alt="eye" class="icon">
+            <img src="svg/share.svg" alt="share" class="icon">
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Ad Blocker</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed. </p>
+          <div class="icon-container">
+            <img src="svg/star.svg" alt="star" class="icon">
+            <img src="svg/eye.svg" alt="eye" class="icon">
+            <img src="svg/share.svg" alt="share" class="icon">
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Money Maker</h3>
+          <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed. </p>
+          <div class="icon-container">
+            <img src="svg/star.svg" alt="star" class="icon">
+            <img src="svg/eye.svg" alt="eye" class="icon">
+            <img src="svg/share.svg" alt="share" class="icon">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="announcements">
+      <h2>Announcements</h2>
+        <div class="announcements-grid">
+          <div class="announcement">
+            <h3 class="announcement-title">Site Maintenance</h3>
+            <p class="announcement-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="announcement">
+            <h3 class="announcement-title">Community Share Day</h3>
+            <p class="announcement-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="announcement">
+            <h3 class="announcement-title"> Updated Privacy Policy</h3>
+            <p class="announcement-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+    </div>
+    <div class="trending">
+      <h2>Trending</h2>
+      <div class="trending-grid">
+        <div class="trend">
+          <img src="svg/dog.svg" alt="dog" class="dog profile-pic">
+          <div>
+            <p class="username">@tegan</p>
+            <p class="project-name">World Peace Builder</p>
+          </div>
+        </div>
+        <div class="trend">
+          <img src="svg/cat.svg" alt="cat" class="cat profile-pic">
+          <div>
+            <p class="username">@morgan</p>
+            <p class="project-name">Super Cool Project</p>
+          </div>
+        </div>
+        <div class="trend">
+          <img src="svg/duck.svg" alt="duck" class="duck profile-pic">
+          <div>
+            <p class="username">@kendall</p>
+            <p class="project-name">Life Changing App</p>
+          </div>
+        </div>
+        <div class="trend">
+          <img src="svg/girafe.svg" alt="girafe" class="girafe profile-pic">
+          <div>
+            <p class="username">@alex</p>
+            <p class="project-name">No Traffic Maker</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

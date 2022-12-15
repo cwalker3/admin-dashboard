@@ -1,0 +1,294 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid: 1fr 7fr / 1fr 5fr;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 8px 10px -10px gray;
+  position: relative;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.sidebar {
+  background-color: #1992d4;
+  grid-area: 1 / 1 / 3 / 2;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+  box-shadow: 8px 0 10px -10px grey;
+}
+
+.nav {
+  height: 80%;
+  display: grid;
+  grid-template-rows: 1.5fr 6fr 3fr;
+  align-items: start;
+  gap: 1em;
+}
+
+.nav div > div {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1em;
+  align-items: center;
+
+}
+
+
+.content {
+  background-color: #e2e8f0;
+  display: grid;
+  grid: 1.2fr 1fr / 2fr 1fr;
+  padding: 1rem;
+}
+
+.top div {
+  font-size: 1.5rem;
+}
+
+
+.sidebar img {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-left: 2rem;
+}
+
+.top div img {
+  height: 2rem;
+  width: 2rem;
+  padding-left: 1.5rem;
+}
+
+
+.top-left {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.top-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bottom-left {
+  align-self: end;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.bottom-right {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.search {
+  height: 1.3rem;
+  width: 1.3rem;
+  padding: 0.5rem;
+}
+
+.bell {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.profile-pic-small {
+  height: 2rem;
+  width: 2rem;;
+}
+.profile-pic-big {
+  height: 3rem;
+  width: 3rem;
+  grid-area: 1 / 1 / 3 / 2;
+  float: left;
+  margin-right: 1rem;
+}
+
+.profile-pic-small,
+.profile-pic-big {
+  background-color: #facc15;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr; 
+  column-gap: 4rem;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  flex: 1;
+  
+  
+}
+
+.bottom-right button{
+  background-color: #1992d4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.4em 1.5em;
+  font-size: 0.9rem;
+}
+
+.greeting {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 0;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 0;
+}
+
+.projects {
+  grid-area: 1 / 1 / 3 / 2;
+
+}
+
+.project-grid {
+  height: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 48%));
+  gap: 1rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  line-height: 0;
+}
+
+.project {
+  background-color: white;
+  border-radius: 2%;
+  border-left: 6px solid #f0b429;
+  box-shadow: 4px 4px 4px -4px grey;
+  padding: 0.5rem;
+}
+
+.project-title,
+.announcement-title {
+  line-height: 0;
+  font-size: 1rem;
+}
+
+.project-text {
+  color: darkgrey;
+  font-size: 0.9rem;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.icon-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.4rem;
+}
+
+.announcments {
+
+}
+
+.announcements-grid {
+  height: 86%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  box-shadow: 4px 4px 4px -4px grey;
+  border-radius: 2%;
+  background-color: white;
+
+
+}
+
+.announcement:nth-child(1),
+.announcement:nth-child(2) {
+  border-bottom: 1px solid grey;
+}
+
+.announcement {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.announcement-text {
+  font-size: 0.9rem;
+}
+
+.trending {
+  
+}
+
+.trending-grid {
+  background-color: white;
+  box-shadow: 4px 4px 4px -4px grey;
+  border-radius: 2%;
+  height: 85%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.2rem;
+}
+
+.username {
+  line-height: 0.2;
+  font-weight: bold;
+}
+
+.project-name {
+  line-height: 0.2;
+  color: gray;
+}
+
+.dog {
+background-color: green;
+}
+
+.cat {
+background-color: #facc15;
+}
+
+.duck {
+background-color: blue;
+}
+
+.girafe {
+  background-color: orange;
+}
+
+
